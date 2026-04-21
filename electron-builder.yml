@@ -1,22 +1,22 @@
 appId: com.openai.electronstarterreact
 productName: Electron Starter React Importer
-asar: true
+
+directories:
+  output: release
+
 files:
   - dist/**/*
   - electron/**/*
-  - package.json
-  - node_modules/**/*
-directories:
-  output: release
-  buildResources: build-resources
-extraMetadata:
-  main: electron/main.js
-mac:
-  target:
-    - dmg
+
+asar: true
+
+publish: null
+
 win:
-  target:
-    - nsis
+  target: nsis
+
+mac:
+  target: dmg
+
 linux:
-  target:
-    - AppImage
+  target: AppImage
